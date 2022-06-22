@@ -1,0 +1,136 @@
+<!-- Boilerplate (!) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmet Demo</title>
+  </head>
+  <body>
+    <!-- Basic Tags and Abbreviations (div,h1,p,section/bq,hdr,ftr,sect) -->
+    <div></div>
+    <h1></h1>
+    <p></p>
+    <section></section>
+    <blockquote></blockquote>
+    <header></header>
+    <footer></footer>
+    <section></section>
+
+    <!-- Classes and Id's ( . and # -> exp:div.myclass h1.class1.class2 div#id div#myid.myclass   ) -->
+    <div class="myclass"></div>
+    <h1 class="class1 class2"></h1>
+    <div id="id"></div>
+    <div id="myid" class="myclass"></div>
+
+    <!-- Content ( {} -> exp: p{write here}) -->
+    <p>This is a paragraph.</p>
+
+    <!-- Siblings ( + -> exp: div+p+bq) -->
+    <div></div>
+    <p></p>
+    <blockquote></blockquote>
+
+    <!-- Nesting ( > -> exp: nav>ul>li  nav>ul>li{Type here}  section.main-section>h1.title{My Title}+p.body{Body text here..}) -->
+    <nav>
+      <ul>
+        <li></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>Item 1</li>
+      </ul>
+    </nav>
+
+    <section class="main-section">
+      <h1 class="title">My Title</h1>
+      <p class="body">Body text here..</p>
+    </section>
+
+    <!-- Climbing Up ( ^ -> exp: div+div>p>span>em^bq  div+div>p>span>em^^bq)-->
+    <div></div>
+    <div>
+      <p>
+        <span><em></em></span>
+        <blockquote></blockquote>
+      </p>
+    </div>
+
+    <div></div>
+    <div>
+      <p><span><em></em></span></p>
+      <blockquote></blockquote>
+    </div>
+
+    <!-- Grouping ( () -> exp: div+(div>p>span>em)+bq      main>(section>h1+p+btn)+section) -->
+    <div></div>
+    <div>
+      <p><span><em></em></span></p>
+    </div>
+    <blockquote></blockquote>
+
+    <main>
+      <section>
+        <h1></h1>
+        <p></p>
+        <button></button>
+      </section>
+      <section></section>
+    </main>
+
+    <!-- Multiplication ( * -> exp: ul>li*5) -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <!-- Numbering ( $ -> exp: ul>li{Item $}*5  ul>li.item${Item $}*5) ul>li.item$@3{Item $@3}*5 -->
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+    <ul>
+      <li class="item1">Item 1</li>
+      <li class="item2">Item 2</li>
+      <li class="item3">Item 3</li>
+      <li class="item4">Item 4</li>
+      <li class="item5">Item 5</li>
+    </ul>
+
+    <ul>
+      <li class="item3">Item 3</li>
+      <li class="item4">Item 4</li>
+      <li class="item5">Item 5</li>
+      <li class="item6">Item 6</li>
+      <li class="item7">Item 7</li>
+    </ul> 
+
+    <!-- Attributes ( [] -> exp: p[title="My title"]  a:blank) -->
+    <p title="My title"></p>
+    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+
+    <!-- Implicit Tags (.class) -->
+    <div class="class"></div> 
+
+    <!-- I got really bored here so I stopped writing everything. -->
+    <!-- Forms & Imputs () -->
+
+    <!-- Lorem Ipsum () -->
+
+    <!-- Advanced Structures () -->
+
+    <!-- CSS Abbreviations () -->
+
+    <!-- Custom Emmet Snippets () -->
+  </body>
+</html>
